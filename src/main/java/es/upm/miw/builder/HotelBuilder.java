@@ -15,13 +15,26 @@ public class HotelBuilder {
         this.name = name;
     }
     
-    public HotelBuilder category(Category hotelCategory) {
-        hotel.setCategory(hotelCategory);
+    public HotelBuilder() {
+    }
+
+    public HotelBuilder name(String name) {
+        hotel.setName(name);
         return this;
     }
     
-    public HotelBuilder reservation(Reservation hotelReservation) {
-        hotel.setReservation(hotelReservation);
+    public HotelBuilder id(long id) {
+        hotel.setId(id);
+        return this;
+    }
+    
+    public HotelBuilder category(Category category) {
+        hotel.setCategory(category);
+        return this;
+    }
+    
+    public HotelBuilder reservation(Reservation reservation) {
+        hotel.setReservation(reservation);
         return this;
     }
     
