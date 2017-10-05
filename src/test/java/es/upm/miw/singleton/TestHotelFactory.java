@@ -5,15 +5,15 @@ import static org.junit.Assert.assertSame;
 
 import org.junit.Test;
 
-public class TestHotel {
+public class TestHotelFactory {
     @Test
     public void testIsSingleton() {
-        assertSame(Hotel.getHotel(), Hotel.getHotel());
+        assertSame(HotelFactory.getHotel(), HotelFactory.getHotel());
     }
 
     @Test
     public void testSingletonNotNull() {
-        assertNotNull(Hotel.getHotel());
+        assertNotNull(HotelFactory.getHotel());
     }
 
 }
