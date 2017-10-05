@@ -1,5 +1,9 @@
 package es.upm.miw.singleton;
 
+import es.upm.miw.ecp1.Category;
+import es.upm.miw.ecp1.Hotel;
+import es.upm.miw.ecp1.Reservation;
+
 public class HotelFactory {
     
     private String name;
