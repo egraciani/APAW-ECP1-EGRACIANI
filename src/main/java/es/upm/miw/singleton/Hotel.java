@@ -1,26 +1,52 @@
 package es.upm.miw.singleton;
 
-import java.util.List;
+import es.upm.miw.ecp1.Category;
+import es.upm.miw.ecp1.Reservation;
 
 public class Hotel {
     private long id;
     
     private String name;
     
-    private List<Category> category;
+    private Category category;
     
     private Reservation reservation;
     
-    private static Hotel hotel  = new Hotel();
-    
-    private Hotel() {
+    public Hotel() {
+        this.id = 0;
         this.name = "";
-        this.reservation = new Reservation();
-        
     }
-    
-    public static Hotel getHotel() {
-        return hotel;
+
+    public long getId() {
+        return id;
     }
-    
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+
+    public Reservation getReservation() {
+        return reservation;
+    }
+
+    public void setReservation(Reservation reservation) {
+        this.reservation = reservation;
+    }
+
 }

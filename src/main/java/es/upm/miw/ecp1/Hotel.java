@@ -1,16 +1,19 @@
 package es.upm.miw.ecp1;
 
-import java.util.List;
-
 public class Hotel {
     private long id;
     
     private String name;
     
-    private List<Category> category;
+    private Category category;
     
     private Reservation reservation;
-
+    
+    public Hotel() {
+        this.id = 0;
+        this.name = "";
+    }
+    
     public long getId() {
         return id;
     }
@@ -27,11 +30,11 @@ public class Hotel {
         this.name = name;
     }
 
-    public List<Category> getCategory() {
+    public Category getCategory() {
         return category;
     }
 
-    public void setCategory(List<Category> category) {
+    public void setCategory(Category category) {
         this.category = category;
     }
 
