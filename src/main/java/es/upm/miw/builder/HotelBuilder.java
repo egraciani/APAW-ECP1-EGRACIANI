@@ -13,9 +13,7 @@ public class HotelBuilder {
     public HotelBuilder(long id, String name) {
         this.id = id;
         this.name = name;
-    }
-    
-    public HotelBuilder() {
+        this.hotel = new Hotel(id, name);
     }
 
     public HotelBuilder name(String name) {

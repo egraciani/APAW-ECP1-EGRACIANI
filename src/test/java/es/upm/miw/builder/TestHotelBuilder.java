@@ -13,7 +13,7 @@ public class TestHotelBuilder {
     @Test
     public void testHotelBuilder() {
         Reservation reservation = new Reservation();
-        Hotel hotel = new HotelBuilder().id(1).name("Hotel A").category(Category.BASIC).reservation(reservation).build();
+        Hotel hotel = new HotelBuilder(1, "Hotel A").category(Category.BASIC).reservation(reservation).build();
         assertEquals(1, hotel.getId());
         assertEquals("Hotel A", hotel.getName());
         assertEquals(Category.BASIC, hotel.getCategory());
