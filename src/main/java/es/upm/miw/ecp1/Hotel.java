@@ -14,6 +14,10 @@ public class Hotel {
         this.name = "";
     }
     
+    public Hotel(long id) {
+        this.id = id;
+    }
+    
     public Hotel(long id, String name) {
         this.id = id;
         this.name = name;

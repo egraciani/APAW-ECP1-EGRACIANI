@@ -1,27 +1,31 @@
 package es.upm.miw.singleton;
 
-import es.upm.miw.ecp1.Category;
+import java.util.HashMap;
+import java.util.Map;
+
 import es.upm.miw.ecp1.Hotel;
-import es.upm.miw.ecp1.Reservation;
 
 public class HotelFactory {
-    
-    private String name;
-    
-    private Category category;
-    
-    private Reservation reservation;
-    
-    private static Hotel hotel  = new Hotel();
-    
+    private static final HotelFactory factory = new HotelFactory();
+
+    private Map<Long, Hotel> hoteles;
+
     private HotelFactory() {
-        this.name = "";
-        this.reservation = new Reservation();
+        this.hoteles = new HashMap<>();
+    }
+
+    public static HotelFactory getFactory() {
+        return factory;
+    }
+
+    public Hotel getHotel(long id) {
+        Hotel result = this.hoteles.get(id);
         
+        return result;
     }
-    
-    public static Hotel getHotel() {
-        return hotel;
+
+    public void removeReference(long id) {
+        this.hoteles.remove(id);
     }
-    
+
 }
