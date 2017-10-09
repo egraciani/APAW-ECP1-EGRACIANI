@@ -32,7 +32,7 @@ public class HotelBuilder {
     }
     
     public HotelBuilder reservation(Reservation reservation) {
-        hotel.setReservation(reservation);
+        hotel.addReservation(reservation);
         return this;
     }
     
