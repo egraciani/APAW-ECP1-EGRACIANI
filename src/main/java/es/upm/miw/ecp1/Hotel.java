@@ -1,28 +1,30 @@
 package es.upm.miw.ecp1;
 
+import java.util.ArrayList;
+
 public class Hotel {
     private long id;
-    
+
     private String name;
-    
+
     private Category category;
-    
-    private Reservation reservation;
-    
+
+    private ArrayList<Reservation> reservations;
+
     public Hotel() {
         this.id = 0;
         this.name = "";
     }
-    
+
     public Hotel(long id) {
         this.id = id;
     }
-    
+
     public Hotel(long id, String name) {
         this.id = id;
         this.name = name;
     }
-    
+
     public long getId() {
         return id;
     }
@@ -47,12 +49,12 @@ public class Hotel {
         this.category = category;
     }
 
-    public Reservation getReservation() {
-        return reservation;
+    public Reservation getReservation(Integer index) {
+        return reservations.get(index);
     }
 
-    public void setReservation(Reservation reservation) {
-        this.reservation = reservation;
+    public void addReservation(Reservation reservation) {
+        this.reservations.add(reservation);
     }
 
 }
