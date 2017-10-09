@@ -32,6 +32,7 @@ public class HotelBuilder {
     }
     
     public HotelBuilder reservation(Reservation reservation) {
+        assert reservation != null;
         hotel.addReservation(reservation);
         return this;
     }
