@@ -30,4 +30,9 @@ public class ReservationLeaf extends ReservationComponent {
         return reservation;
     }
 
+    @Override
+    public int getNumberOfReservations() {
+        return 1;
+    }
+
 }

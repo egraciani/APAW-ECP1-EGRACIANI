@@ -13,6 +13,8 @@ public abstract class ReservationComponent {
     public abstract void add(ReservationComponent reservationComponent);
     
     public abstract void remove(ReservationComponent reservationComponent);
+    
+    public abstract int getNumberOfReservations();
 
     public String getClient() {
         return client;

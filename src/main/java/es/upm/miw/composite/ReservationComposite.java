@@ -29,5 +29,12 @@ public class ReservationComposite extends ReservationComponent {
         reservationComponentList.remove(reservationComponent);
     }
 
+    @Override
+    public int getNumberOfReservations() {
+        return reservationComponentList.size();
+    }
+    
+
+
 }
 
