@@ -6,5 +6,5 @@
 Planteamiento de la aplicación de los patrones:
 * Factory con patrón Singleton. Se ha creado una Factoría de hoteles (HotelFactory)
 * Builder. Clase HotelBuilder para la construccion de objetos Hotel.
-* Composite. Aplicado el patrón composite a las Reservations
-* Strategy. 
+* Composite. Aplicado el patrón composite a las Reservations.
+* Strategy. Ejemplo de aplicación del patrón Strategy (explicación en la wiki del proyecto).
