@@ -34,7 +34,5 @@ public class ReservationComposite extends ReservationComponent {
         return reservationComponentList.size();
     }
     
-
-
 }
 
