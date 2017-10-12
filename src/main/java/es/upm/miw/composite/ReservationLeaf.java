@@ -35,4 +35,11 @@ public class ReservationLeaf extends ReservationComponent {
         return 1;
     }
 
+    @Override
+    public String view() {
+        return Long.toString(this.reservation.getId());
+    }
+    
+    
+
 }

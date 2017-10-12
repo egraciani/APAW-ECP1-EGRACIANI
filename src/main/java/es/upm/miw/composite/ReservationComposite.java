@@ -6,7 +6,8 @@ import java.util.List;
 public class ReservationComposite extends ReservationComponent {
 
     List<ReservationComponent> reservationComponentList;
-
+    String client;
+    
     public ReservationComposite(String client) {
         super(client);
         reservationComponentList = new ArrayList<>();
@@ -32,6 +33,11 @@ public class ReservationComposite extends ReservationComponent {
     @Override
     public int getNumberOfReservations() {
         return reservationComponentList.size();
+    }
+
+    @Override
+    public String view() {
+        return this.client;
     }
     
 }

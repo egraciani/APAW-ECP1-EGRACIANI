@@ -15,6 +15,8 @@ public abstract class ReservationComponent {
     public abstract void remove(ReservationComponent reservationComponent);
     
     public abstract int getNumberOfReservations();
+    
+    public abstract String view();
 
     public String getClient() {
         return client;
