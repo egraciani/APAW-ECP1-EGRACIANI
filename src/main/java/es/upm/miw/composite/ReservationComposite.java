@@ -7,8 +7,8 @@ public class ReservationComposite extends ReservationComponent {
 
     List<ReservationComponent> reservationComponentList;
 
-    public ReservationComposite(String icon) {
-        super(icon);
+    public ReservationComposite(String client) {
+        super(client);
         reservationComponentList = new ArrayList<>();
     }
 
